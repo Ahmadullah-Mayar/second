@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        :root{
+            --lis-tbllet-remover:none;
+            --text-dec:none;
+            --primary:pink;
+            --spin:white;
+            --gr:gray;
+            --spin-gr:lightgray;
+            --mr-top:0.5em;
+            --no-bor:none;
+            --no-out:none;
+            --bor-rid:0.3em;
+            --pad:0.4em;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: var(--primary);
+
+        }
+        #main-contianer{
+            background-color: rgb(21, 21, 37);
+            width:40rem ;
+            height:25rem ;
+            margin: 4em auto;
+            box-shadow:  0 0 10px 0 var(--gr)  ;
+        }
+        #main-contianer nav ul {
+            list-style-type: var(--lis-tbllet-remover);
+            padding-top: 1em; 
+            margin-left: 10em ; 
+        }
+       
+        #main-contianer nav ul li:last-child a{
+            color:var(--primary);
+
+        }
+        #main-contianer nav ul li{
+            display: inline-block;
+            text-transform: uppercase;
+            margin-right: 1em;
+        }
+        #main-contianer nav ul li a{
+            text-decoration: var(--text-dec);
+            color:var(--spin); 
+            font-size:0.8em ;
+        }
+        #main-contianer form{
+            width: 16rem;
+            height: 15em;
+            margin: 3.5rem;
+            /* border: 2px solid red; */
+            float: left;
+        }
+        #main-contianer form h3{
+            color:var(--primary);
+        }
+        #main-contianer form p{
+            color: var(--spin);
+            margin-bottom: var(--mr-top);
+        }
+        #main-contianer form .filde-contianer input{
+            border:var(--no-bor);
+            outline: var(--no-out);
+            background-color:var(--spin-gr);
+            width: 9em;
+            padding:var(--pad);
+            border-radius:var(--bor-rid);
+            margin-top: var(--mr-top);
+        }
+
+        ::placeholder{
+            color:var(--gr);
+            font-size: smaller;
+        }
+        #main-contianer form textarea{
+            border:var(--no-bor);
+            outline: var(--no-out);
+            background-color:var(--spin-gr);
+            width: 18.2em;
+            padding: 0.2em;
+            border-radius: var(--bor-rid);
+            margin-top: var(--mr-top);
+
+        }
+
+        #main-contianer form button{
+            background-color: var(--primary);
+             color: var(--gr);
+            border: var(--no-bor);
+            outline: var(--no-out);
+            padding: var(--pad);
+            border-radius: var(--bor-rid);
+
+        }
+        #main-contianer #right-section{
+            margin-top: 1em;
+            padding: 2em;
+            
+
+        }
+
+        #main-contianer #right-section h2{
+            color: var(--primary);
+            margin-bottom: var(--mr-top);
+            font-size: 1.8em;
+        }
+        #main-contianer #right-section address, #main-contiane #right-section time{
+            font-size: medium;
+            color: var(--spin);
+            font-style: none;
+            margin-bottom: var(--mr-top);
+
+        }
+        #main-contianer #right-section #follow-button{
+            margin-top: var(--mr-top);
+        }
+        #main-contianer #right-section ul{
+            list-style-type: var(--lis-tbllet-remover);
+        }
+        #main-contianer #right-section ul li{
+            display: inline-block;
+            margin-right: var(--mr-top);
+        }
+        #main-contianer #right-section ul li a{
+            color: var(--spin);
+            text-decoration: var(--text-dec);
+            text-transform: lowercase;
+            font-size: 1em;
+        }
+
+       
+    </style>
+
+</head>
+<body>
+ <section id="main-contianer">
+  
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contcat</a></li>
+            </ul>
+        </nav>
+          
+
+       
+         <form action="">
+           
+                <h3>just say hello</h3>
+                <p>Let us know  more about you! </p>
+                <div class="filde-contianer">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <div class="filde-contianer">
+                    <input type="email" placeholder="Mail">
+                    <input type="tell" placeholder="phone">
+                </div>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Massege"></textarea>
+                <button type="submit">submit</button>
+            </form>
+                <section id="right-section">
+                    <h2>contcat <br> information</h2>
+                    <address> 9th district <br>  kandahar, afghanistan </address>
+                    <address>cell 0798425895</address>
+                    <time> we are open </time>
+                    <h2 id="follw-button"> follow uss</h2>
+                    <ul>
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">instigram</a></li>
+                        <li><a href="#">twitter</a></li>
+                    </ul>
+                </section>
+            
+        
+ </section>
+  
+    
+</body>
+</html>
+
